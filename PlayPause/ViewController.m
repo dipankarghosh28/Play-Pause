@@ -40,7 +40,9 @@
 }
 -(void) initAudio
 {
-   
+    NSURL *myUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Secret"ofType:@"mp3"]];
+        
+        self->audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: myUrl error:nil];
 }
 
 - (IBAction)playButton:(id)sender
