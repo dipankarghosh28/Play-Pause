@@ -61,6 +61,27 @@
 
 -(void) normalShake
 {
+    if (shakeCount % 2 == 0)
+    {
+        [audioPlayer stop];
+        [audioPlayer play];
+        shakeCount = 0;
+        _playLabel.text =@"Restarted the music";
+    }
+    else
+    {
+        if(self.play == 0){
+            self.play = 1;
+            [audioPlayer play];
+            _playLabel.text =@"Dipankar played his first music";
+        } else {
+            self.play = 0;
+            [audioPlayer pause];
+            _playLabel.text =@"Dipankar Stopped the music";
+        }
+        shakeCount = 0;
+    }
+
 }
 
 
