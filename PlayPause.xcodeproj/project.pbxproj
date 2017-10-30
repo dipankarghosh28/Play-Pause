@@ -15,8 +15,6 @@
 		D56D73481F84175B00F454A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D73461F84175B00F454A5 /* LaunchScreen.storyboard */; };
 		D56D73531F84175C00F454A5 /* PlayPauseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D56D73521F84175C00F454A5 /* PlayPauseTests.m */; };
 		D56D735E1F84175C00F454A5 /* PlayPauseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D56D735D1F84175C00F454A5 /* PlayPauseUITests.m */; };
-		D56D736C1F841A4300F454A5 /* Secret.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D56D736B1F841A4300F454A5 /* Secret.mp3 */; };
-		D56D736E1F841A5500F454A5 /* music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D56D736D1F841A5500F454A5 /* music.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +51,6 @@
 		D56D73591F84175C00F454A5 /* PlayPauseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayPauseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56D735D1F84175C00F454A5 /* PlayPauseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayPauseUITests.m; sourceTree = "<group>"; };
 		D56D735F1F84175C00F454A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D56D736B1F841A4300F454A5 /* Secret.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Secret.mp3; path = "../../Desktop/Shake-master/Secret.mp3"; sourceTree = "<group>"; };
-		D56D736D1F841A5500F454A5 /* music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = music.jpg; path = "../../Desktop/Shake-master/music.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +81,6 @@
 		D56D732C1F84175B00F454A5 = {
 			isa = PBXGroup;
 			children = (
-				D56D736D1F841A5500F454A5 /* music.jpg */,
-				D56D736B1F841A4300F454A5 /* Secret.mp3 */,
 				D56D73371F84175B00F454A5 /* PlayPause */,
 				D56D73511F84175C00F454A5 /* PlayPauseTests */,
 				D56D735C1F84175C00F454A5 /* PlayPauseUITests */,
@@ -255,10 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56D736E1F841A5500F454A5 /* music.jpg in Resources */,
 				D56D73481F84175B00F454A5 /* LaunchScreen.storyboard in Resources */,
 				D56D73451F84175B00F454A5 /* Assets.xcassets in Resources */,
-				D56D736C1F841A4300F454A5 /* Secret.mp3 in Resources */,
 				D56D73431F84175B00F454A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +518,7 @@
 				D56D73641F84175C00F454A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D56D73651F84175C00F454A5 /* Build configuration list for PBXNativeTarget "PlayPauseTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +527,7 @@
 				D56D73671F84175C00F454A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D56D73681F84175C00F454A5 /* Build configuration list for PBXNativeTarget "PlayPauseUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +536,7 @@
 				D56D736A1F84175C00F454A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
