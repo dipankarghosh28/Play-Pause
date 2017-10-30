@@ -23,6 +23,13 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.play = 0;
+    self.rate = 1;
+    [self initAudio];
+    //  UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"music.jpg"]];
+    //   [self.view setBackgroundColor:color];
 }
 
 - (void)didReceiveMemoryWarning
