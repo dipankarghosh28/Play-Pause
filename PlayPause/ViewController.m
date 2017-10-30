@@ -47,6 +47,12 @@
 
 - (IBAction)playButton:(id)sender
 {
+    self.play = 1;
+    self.rate = 5;
+    self->audioPlayer.numberOfLoops = -1;
+    _playLabel.text =@"Archana played her first music";
+    [audioPlayer rate];
+    [audioPlayer play];
 }
 
 - (BOOL) canBecomeFirstResponder
