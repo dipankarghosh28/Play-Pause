@@ -93,6 +93,11 @@
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
+    if (event.type == UIEventSubtypeMotionShake)
+    {
+        shakeCount++;
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector: @selector(normalShake) userInfo:nil repeats:NO];
+    }
 }
 
 @end
