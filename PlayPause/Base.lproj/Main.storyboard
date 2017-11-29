@@ -22,15 +22,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbE-Uk-oBk">
-                                <rect key="frame" x="86" y="244" width="160" height="30"/>
+                                <rect key="frame" x="61" y="294" width="252" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Select song">
+                                <state key="normal" title="Let's play some music">
                                     <color key="titleColor" red="0.178274765" green="0.21993286170000001" blue="0.61807602819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rY3-1f-GaB" kind="show" id="VzJ-PU-QyY"/>
+                                    <segue destination="o94-39-x7g" kind="show" id="dc1-Af-YVG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,38 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wls-xA-0vB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1495" y="36"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nio-7v-ZQA">
-            <objects>
-                <viewController id="rY3-1f-GaB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rg1-aT-8iH"/>
-                        <viewControllerLayoutGuide type="bottom" id="uq4-Vb-dvK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FQV-IO-Bw6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztW-Lt-GRP">
-                                <rect key="frame" x="37" y="245" width="256" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="If selected Press this button">
-                                    <color key="titleColor" red="0.178274765" green="0.21993286170000001" blue="0.61807602819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="o94-39-x7g" kind="show" id="Xzk-ft-D1J"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.72393383099999997" green="0.7742657167" blue="0.98132258650000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pQU-Di-zkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-823" y="36"/>
+            <point key="canvasLocation" x="-1495.2" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="n6J-Jn-l0f">
@@ -129,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAn-Vg-WRm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="35.532233883058474"/>
+            <point key="canvasLocation" x="-646" y="36"/>
         </scene>
     </scenes>
 </document>

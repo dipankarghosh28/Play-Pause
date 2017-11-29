@@ -24,23 +24,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     self.play = 0;
     self.rate = 1;
     [self initAudio];
-    //  UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"music.jpg"]];
-    //   [self.view setBackgroundColor:color];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-    //This is general warning.
+    [super didReceiveMemoryWarning]; //This is general warning.
 }
 -(void) initAudio
 {
-    NSURL *myUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Secret"ofType:@"mp3"]];
+    NSURL *myUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Dewarists"ofType:@"mp3"]];
         
         self->audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: myUrl error:nil];
 }
@@ -50,7 +45,7 @@
     self.play = 1;
     self.rate = 5;
     self->audioPlayer.numberOfLoops = -1;
-    _playLabel.text =@"Archana played her first music";
+    _playLabel.text =@"Music is being played";
     [audioPlayer rate];
     [audioPlayer play];
 }
@@ -67,7 +62,7 @@
 
 -(void) normalShake
 {
-    if (shakeCount % 2 == 0)
+    if (shakeCount % 2 == 0) //shakeCount % 2 determines the shake frequency.
     {
         [audioPlayer stop];
         [audioPlayer play];
@@ -79,11 +74,11 @@
         if(self.play == 0){
             self.play = 1;
             [audioPlayer play];
-            _playLabel.text =@"Dipankar played his first music";
+            _playLabel.text =@"Music is being played";
         } else {
             self.play = 0;
             [audioPlayer pause];
-            _playLabel.text =@"Dipankar Stopped the music";
+            _playLabel.text =@"Music has stopped";
         }
         shakeCount = 0;
     }
