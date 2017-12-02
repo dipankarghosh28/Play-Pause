@@ -18,6 +18,9 @@
 		D5737F241FA78FE100B44F05 /* music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5737F231FA78FE100B44F05 /* music.jpg */; };
 		D5737F261FA78FE800B44F05 /* Secret.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5737F251FA78FE800B44F05 /* Secret.mp3 */; };
 		D5AD8BF81FCE701A00EE6C12 /* Dewarists.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */; };
+		D5AD8C121FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD8C111FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.m */; };
+		D5AD8C171FD33DCF00EE6C12 /* APLGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD8C141FD33DCF00EE6C12 /* APLGraphView.m */; };
+		D5AD8C181FD33DCF00EE6C12 /* APLGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD8C161FD33DCF00EE6C12 /* APLGraphViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		D5737F231FA78FE100B44F05 /* music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = music.jpg; sourceTree = SOURCE_ROOT; };
 		D5737F251FA78FE800B44F05 /* Secret.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Secret.mp3; sourceTree = SOURCE_ROOT; };
 		D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dewarists.mp3; sourceTree = SOURCE_ROOT; };
+		D5AD8C101FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APLAccelerometerGraphViewController.h; path = "../../untitled folder/APLAccelerometerGraphViewController.h"; sourceTree = "<group>"; };
+		D5AD8C111FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APLAccelerometerGraphViewController.m; path = "../../untitled folder/APLAccelerometerGraphViewController.m"; sourceTree = "<group>"; };
+		D5AD8C131FD33DCF00EE6C12 /* APLGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APLGraphView.h; path = "../../untitled folder/APLGraphView.h"; sourceTree = "<group>"; };
+		D5AD8C141FD33DCF00EE6C12 /* APLGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APLGraphView.m; path = "../../untitled folder/APLGraphView.m"; sourceTree = "<group>"; };
+		D5AD8C151FD33DCF00EE6C12 /* APLGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APLGraphViewController.h; path = "../../untitled folder/APLGraphViewController.h"; sourceTree = "<group>"; };
+		D5AD8C161FD33DCF00EE6C12 /* APLGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APLGraphViewController.m; path = "../../untitled folder/APLGraphViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,12 @@
 				D56D733F1F84175B00F454A5 /* ViewController.m */,
 				D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */,
 				D56D73411F84175B00F454A5 /* Main.storyboard */,
+				D5AD8C131FD33DCF00EE6C12 /* APLGraphView.h */,
+				D5AD8C141FD33DCF00EE6C12 /* APLGraphView.m */,
+				D5AD8C151FD33DCF00EE6C12 /* APLGraphViewController.h */,
+				D5AD8C161FD33DCF00EE6C12 /* APLGraphViewController.m */,
+				D5AD8C101FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.h */,
+				D5AD8C111FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.m */,
 				D56D73441F84175B00F454A5 /* Assets.xcassets */,
 				D56D73461F84175B00F454A5 /* LaunchScreen.storyboard */,
 				D56D73491F84175B00F454A5 /* Info.plist */,
@@ -289,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56D73401F84175B00F454A5 /* ViewController.m in Sources */,
+				D5AD8C121FD33DBC00EE6C12 /* APLAccelerometerGraphViewController.m in Sources */,
 				D56D733D1F84175B00F454A5 /* AppDelegate.m in Sources */,
+				D5AD8C171FD33DCF00EE6C12 /* APLGraphView.m in Sources */,
 				D56D733A1F84175B00F454A5 /* main.m in Sources */,
+				D5AD8C181FD33DCF00EE6C12 /* APLGraphViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
