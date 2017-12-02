@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Secret.mp3">
-   </FileRef>
-   <FileRef
-      location = "group:../music.jpg">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
