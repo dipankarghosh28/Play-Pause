@@ -35,7 +35,7 @@
 }
 -(void) initAudio
 {
-    NSURL *myUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Dewarists"ofType:@"mp3"]];
+    NSURL *myUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"TestMusic"ofType:@"mp3"]];
         
         self->audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: myUrl error:nil];
 }

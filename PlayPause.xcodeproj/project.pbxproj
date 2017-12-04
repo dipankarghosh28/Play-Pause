@@ -23,6 +23,7 @@
 		D578FE771FD3433800A48AE6 /* APLGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = D578FE731FD3433800A48AE6 /* APLGraphView.m */; };
 		D578FE781FD3433800A48AE6 /* APLGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D578FE751FD3433800A48AE6 /* APLGraphViewController.m */; };
 		D5AD8BF81FCE701A00EE6C12 /* Dewarists.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */; };
+		D5CEFE471FD5C01F005186BC /* TestMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5CEFE461FD5C01F005186BC /* TestMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D578FE741FD3433800A48AE6 /* APLGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGraphViewController.h; sourceTree = "<group>"; };
 		D578FE751FD3433800A48AE6 /* APLGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphViewController.m; sourceTree = "<group>"; };
 		D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dewarists.mp3; sourceTree = SOURCE_ROOT; };
+		D5CEFE461FD5C01F005186BC /* TestMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TestMusic.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				6012E7601FD34403004F98A6 /* APLUserInfoViewController.m */,
 				D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */,
 				D56D73411F84175B00F454A5 /* Main.storyboard */,
+				D5CEFE461FD5C01F005186BC /* TestMusic.mp3 */,
 				D56D73441F84175B00F454A5 /* Assets.xcassets */,
 				D56D73461F84175B00F454A5 /* LaunchScreen.storyboard */,
 				D56D73491F84175B00F454A5 /* Info.plist */,
@@ -289,6 +292,7 @@
 				D5737F241FA78FE100B44F05 /* music.jpg in Resources */,
 				D56D73451F84175B00F454A5 /* Assets.xcassets in Resources */,
 				D5AD8BF81FCE701A00EE6C12 /* Dewarists.mp3 in Resources */,
+				D5CEFE471FD5C01F005186BC /* TestMusic.mp3 in Resources */,
 				D5737F261FA78FE800B44F05 /* Secret.mp3 in Resources */,
 				D56D73431F84175B00F454A5 /* Main.storyboard in Resources */,
 			);
