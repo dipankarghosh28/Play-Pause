@@ -1,5 +1,5 @@
 //
-//  APLUserInfoViewController.m
+//  APLGraphViewController.m
 //  PlayPause
 //
 //  Created by Dipankar Ghosh on 12/2/17.
@@ -93,7 +93,5 @@
 {
     return;
 }
-
-
 
 @end

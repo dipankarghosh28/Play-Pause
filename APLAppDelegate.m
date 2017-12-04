@@ -1,5 +1,5 @@
 //
-//  APLUserInfoViewController.m
+//  APLAppDelegate.m
 //  PlayPause
 //
 //  Created by Dipankar Ghosh on 12/2/17.
@@ -13,7 +13,6 @@
  */
 
 #import "APLAppDelegate.h"
-
 #import "APLGraphViewController.h"
 
 @interface APLAppDelegate ()

@@ -1,5 +1,5 @@
 //
-//  APLUserInfoViewController.m
+//  APLGraphView.m
 //  PlayPause
 //
 //  Created by Dipankar Ghosh on 12/2/17.
@@ -364,20 +364,12 @@ void DrawGridlines(CGContextRef context, CGFloat x, CGFloat width)
 
 -(void)commonInit
 {
-    // Create a mutable array to store segments, which is required by -addSegment.
     _segments = [[NSMutableArray alloc] init];
     
-    /*
-     Create the text view and add it as a subview. We keep a weak reference to that view afterwards for laying out the segment layers.
-     */
     APLGraphTextView *text = [[APLGraphTextView alloc] initWithFrame:CGRectMake(0.0, 0.0, 32.0, 112.0)];
     [self addSubview:text];
     _textView = text;
     
-    /*
-     Create a new current segment, which is required by -addX:y:z and other methods.
-     This is also a weak reference (we assume that the 'segments' array will keep the strong reference).
-     */
     _current = [self addSegment];
 }
 
@@ -405,69 +397,41 @@ void DrawGridlines(CGContextRef context, CGFloat x, CGFloat width)
     }
 }
 
-/*
- kSegmentInitialPosition defines the initial position of a segment that is meant to be displayed on the left side of the graph.
- This positioning is meant so that a few entries must be added to the segment's history before it becomes visible to the user. This value could be tweaked a little bit with varying results, but the X coordinate should never be larger than 16 (the center of the text view) or the zero values in the segment's history will be exposed to the user.
- */
 #define kSegmentInitialPosition CGPointMake(14.0, 56.0);
 
-
-/*
- Creates a new segment, adds it to 'segments', and returns a weak reference to that segment. Typically a graph will have around a dozen segments, but this depends on the width of the graph view and segments.
- */
 -(APLGraphViewSegment*)addSegment
 {
-    // Create a new segment and add it to the segments array.
     APLGraphViewSegment * segment = [[APLGraphViewSegment alloc] init];
     
-    /*
-     Add the new segment at the front of the array because -recycleSegment expects the oldest segment to be at the end of the array. As long as we always insert the youngest segment at the front this will be true.
-     */
     [self.segments insertObject:segment atIndex:0];
 
-    /* Ensure that newly added segment layers are placed after the text view's layer so that the text view always renders above the segment layer.
-     */
     [self.layer insertSublayer:segment.layer below:self.textView.layer];
     
-    // Position the segment properly (see the comment for kSegmentInitialPosition).
     segment.layer.position = kSegmentInitialPosition;
 
     return segment;
 }
 
 
-// Recycles a segment from 'segments' into 'current'.
 -(void)recycleSegment
 {
-    /*
-     Start with the last object in the segments array, because it should either be visible onscreen (which indicates that we need more segments) or pushed offscreen (which makes it eligible for recycling).
-     */
+    
     APLGraphViewSegment * last = [self.segments lastObject];
     if ([last isVisibleInRect:self.layer.bounds])
     {
-        // The last segment is still visible, so create a new segment, which is now the current segment.
         self.current = [self addSegment];
     }
     else
     {
-        // The last segment is no longer visible, so reset it in preperation for being recycled.
         [last reset];
-        // Position the segment properly (see the comment for kSegmentInitialPosition).
         last.layer.position = kSegmentInitialPosition;
-        /*
-         Move the segment from the last position in the array to the first position in the array because it is now the youngest segment,
-         */
+        
         [self.segments insertObject:last atIndex:0];
         [self.segments removeLastObject];
-        // and make it the current segment.
         self.current = last;
     }
 }
 
-
-/*
- The graph view itself exists only to draw the background and gridlines. All other content is drawn either into the GraphTextView or into a layer managed by a GraphViewSegment.
- */
 -(void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();

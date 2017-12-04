@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6012E7631FD34404004F98A6 /* APLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6012E75E1FD34403004F98A6 /* APLAppDelegate.m */; };
-		6012E7641FD34404004F98A6 /* APLUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6012E7601FD34403004F98A6 /* APLUserInfoViewController.m */; };
 		D56D733A1F84175B00F454A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D56D73391F84175B00F454A5 /* main.m */; };
 		D56D733D1F84175B00F454A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D56D733C1F84175B00F454A5 /* AppDelegate.m */; };
 		D56D73401F84175B00F454A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56D733F1F84175B00F454A5 /* ViewController.m */; };
@@ -45,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		6012E75E1FD34403004F98A6 /* APLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		6012E75F1FD34403004F98A6 /* APLUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLUserInfoViewController.h; sourceTree = SOURCE_ROOT; };
-		6012E7601FD34403004F98A6 /* APLUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLUserInfoViewController.m; sourceTree = SOURCE_ROOT; };
 		6012E7611FD34403004F98A6 /* APLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		6012E7621FD34403004F98A6 /* APLGyroGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGyroGraphViewController.h; sourceTree = SOURCE_ROOT; };
 		D56D73351F84175B00F454A5 /* PlayPause.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayPause.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +110,7 @@
 				D578FE751FD3433800A48AE6 /* APLGraphViewController.m */,
 				D5737F251FA78FE800B44F05 /* Secret.mp3 */,
 				D5737F231FA78FE100B44F05 /* music.jpg */,
+				D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */,
 				D56D73371F84175B00F454A5 /* PlayPause */,
 				D56D73511F84175C00F454A5 /* PlayPauseTests */,
 				D56D735C1F84175C00F454A5 /* PlayPauseUITests */,
@@ -140,9 +138,6 @@
 				6012E7611FD34403004F98A6 /* APLAppDelegate.h */,
 				6012E75E1FD34403004F98A6 /* APLAppDelegate.m */,
 				6012E7621FD34403004F98A6 /* APLGyroGraphViewController.h */,
-				6012E75F1FD34403004F98A6 /* APLUserInfoViewController.h */,
-				6012E7601FD34403004F98A6 /* APLUserInfoViewController.m */,
-				D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */,
 				D56D73411F84175B00F454A5 /* Main.storyboard */,
 				D5CEFE461FD5C01F005186BC /* TestMusic.mp3 */,
 				D56D73441F84175B00F454A5 /* Assets.xcassets */,
@@ -324,7 +319,6 @@
 				D56D733D1F84175B00F454A5 /* AppDelegate.m in Sources */,
 				D578FE771FD3433800A48AE6 /* APLGraphView.m in Sources */,
 				D56D733A1F84175B00F454A5 /* main.m in Sources */,
-				6012E7641FD34404004F98A6 /* APLUserInfoViewController.m in Sources */,
 				6012E7631FD34404004F98A6 /* APLAppDelegate.m in Sources */,
 				D578FE781FD3433800A48AE6 /* APLGraphViewController.m in Sources */,
 			);
