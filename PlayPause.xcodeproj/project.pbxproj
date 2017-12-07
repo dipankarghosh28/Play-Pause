@@ -23,6 +23,7 @@
 		D578FE781FD3433800A48AE6 /* APLGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D578FE751FD3433800A48AE6 /* APLGraphViewController.m */; };
 		D5AD8BF81FCE701A00EE6C12 /* Dewarists.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */; };
 		D5CEFE471FD5C01F005186BC /* TestMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5CEFE461FD5C01F005186BC /* TestMusic.mp3 */; };
+		D5CEFE4B1FD9AA8E005186BC /* ios in Resources */ = {isa = PBXBuildFile; fileRef = D5CEFE4A1FD9AA8E005186BC /* ios */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		D578FE751FD3433800A48AE6 /* APLGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphViewController.m; sourceTree = "<group>"; };
 		D5AD8BF71FCE701A00EE6C12 /* Dewarists.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dewarists.mp3; sourceTree = SOURCE_ROOT; };
 		D5CEFE461FD5C01F005186BC /* TestMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TestMusic.mp3; sourceTree = SOURCE_ROOT; };
+		D5CEFE4A1FD9AA8E005186BC /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ios; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D578FE711FD3433800A48AE6 /* APLAccelerometerGraphViewController.m */,
 				D578FE721FD3433800A48AE6 /* APLGraphView.h */,
 				D578FE731FD3433800A48AE6 /* APLGraphView.m */,
+				D5CEFE4A1FD9AA8E005186BC /* ios */,
 				D578FE741FD3433800A48AE6 /* APLGraphViewController.h */,
 				D578FE751FD3433800A48AE6 /* APLGraphViewController.m */,
 				D5737F251FA78FE800B44F05 /* Secret.mp3 */,
@@ -289,6 +292,7 @@
 				D5AD8BF81FCE701A00EE6C12 /* Dewarists.mp3 in Resources */,
 				D5CEFE471FD5C01F005186BC /* TestMusic.mp3 in Resources */,
 				D5737F261FA78FE800B44F05 /* Secret.mp3 in Resources */,
+				D5CEFE4B1FD9AA8E005186BC /* ios in Resources */,
 				D56D73431F84175B00F454A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
