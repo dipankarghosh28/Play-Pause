@@ -41,7 +41,7 @@
 {
     [super viewDidLoad];
     self.updateIntervalSlider.value = 0.0f;
-    UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"music.jpg"]];
+    UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"sv.jpg"]];
     [self.view setBackgroundColor:color];
 }
 
